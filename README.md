@@ -1,0 +1,1 @@
+# tslint-as-eslint-with-airbnb-rules
