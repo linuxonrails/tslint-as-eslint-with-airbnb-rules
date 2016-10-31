@@ -1,6 +1,7 @@
 var gulp        = require('gulp');
 var eslint      = require('gulp-eslint');
-var tslint      = require("gulp-tslint");
+var tslint      = require('gulp-tslint');
+var rename      = require('gulp-rename');
 
 gulp.task('eslint', function () {
   gulp.src('src/foobar.js')
@@ -17,7 +18,9 @@ gulp.task('eslint', function () {
 });
 
 gulp.task('tslint', function () {
-  gulp.src('src/foobar.ts')
+  gulp.src('src/foobar.js')
+  .pipe(rename('foobar.ts'))
+  .pipe(gulp.dest('src/'))
   .pipe(tslint({
     formattersDirectory: 'node_modules/custom-tslint-formatters/formatters',
     formatter: 'grouped', // from custom-tslint-formatters

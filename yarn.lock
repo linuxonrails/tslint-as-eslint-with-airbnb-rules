@@ -835,6 +835,10 @@ gulp-eslint:
     eslint "^3.0.0"
     gulp-util "^3.0.6"
 
+gulp-rename:
+  version "1.2.2"
+  resolved "https://registry.yarnpkg.com/gulp-rename/-/gulp-rename-1.2.2.tgz#3ad4428763f05e2764dec1c67d868db275687817"
+
 gulp-tslint:
   version "6.1.2"
   resolved "https://registry.yarnpkg.com/gulp-tslint/-/gulp-tslint-6.1.2.tgz#9e2de82ef25aaa4378fd89fe5b443b3eaf702fed"
